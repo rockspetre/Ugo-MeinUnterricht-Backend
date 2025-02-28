@@ -97,11 +97,25 @@ This project demonstrates a robust, production-ready system that:
 ## Prerequisites
 
 - **Docker & Docker Compose:** For containerized deployment.
-- **Node.js (v20 or later):** For running backend and frontend manually.
+- **Node.js (v20 or later):** For running backend.
 - **npm or yarn:** Package manager.
 - **MongoDB:** (If running locally outside Docker)
 
 ---
+
+### Setup
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/rockspetre/Ugo-MeinUnterricht-Backend.git
+   cd Ugo-MeinUnterricht-Backend
+
+
+Install dependencies:
+
+```dotenv
+npm install or yarn install
+```
 
 ## Environment Variables
 
@@ -110,7 +124,7 @@ The application uses a single environment variable for the MongoDB connection, a
 - **MONGO_URL**  
   - In Docker, set it to:  
     `mongodb://mongo:27017/movies`
-  - When running locally, the code automatically replaces `mongo` with `localhost` if the hostname is not resolvable.
+  - When running locally, it is important to replace `mongo` with `localhost`.
   
 - **OMDB_API_KEY** – Your OMDB API key.
 
